@@ -1,0 +1,143 @@
+{% extends 'list/base_in.html' %}
+
+{% block body %}
+	<!-- Breadcomb area Start-->
+	<div class="breadcomb-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="breadcomb-list">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="breadcomb-wp">
+									<div class="breadcomb-icon">
+										<i class="notika-icon notika-windows"></i>
+									</div>
+									<div class="breadcomb-ctn">
+										<h2>Case</h2>
+										<p>Make a new case or choose an existant one</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Breadcomb area End-->
+    <!-- Case area Start-->
+    <div class="normal-table-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="normal-table-list mg-t-30">
+                        <div class="basic-tb-hd">
+                            <h2>Select a case</h2>
+                        </div>
+                        <div class="bsc-tbl-st">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Type</th>
+                                        <th>Date created</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                {% if cases %}
+                            		{% for case in cases %}
+		                                <tr>
+		                                    <td>{{ case.c_name }}</td>
+		                                    <td>{{ case.c_type }}</td>
+		                                    <td>{{ case.c_date_created }}</td>
+		                                    {% if case.c_unsupported %}
+		                                    		<td><a><button class="btn btn-danger notika-btn-danger" disabled>Unsupported</button></td>
+		                                    {% elif case.c_status %}
+		 		                            		<td><a href="{% url 'list:ready' case.id %}"><button class="btn btn-success notika-btn-success waves-effect">Ready</button></a></td>
+		 		                            {% else %}
+		 		                            		<td><button class="btn btn-success notika-btn-success waves-effect" disabled>Pending</button></td>
+		                                    {% endif %}
+		                                    <td><a href="{% url 'list:delete_case' case.id %}"><button class="btn btn-danger notika-btn-danger waves-effect">Delete</button></a></td>
+		                                </tr>
+		                        	{% endfor %}
+		                        {% endif %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Case area Start-->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-example-wrap mg-t-30">
+                      <form action="{% url 'list:add_case' %}" name="case_f" method="post" enctype="multipart/form-data">
+                      	{% csrf_token %}
+                        <div class="cmp-tb-hd cmp-int-hd">
+                            <h2>New Case</h2>
+                        </div>
+                        <div class="form-example-int form-horizental">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                        <label class="hrzn-fm">Case Name</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="nk-int-st">
+                                            <input name="name" type="text" class="form-control input-sm" placeholder="Enter a Name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                        <label class="hrzn-fm">Type</label>
+                                    </div>
+                                    <div class="col-lg-3 bootstrap-select fm-cmp-mg">
+                                        <select name="type" class="selectpicker" required>
+                                            <option value="memory">Memory forensics</option>
+                                            <option value="disk">Disk forensics</option>
+                                            <option value="network">Network forensics</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                        <label class="hrzn-fm">Choose a file</label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="custom-file">
+										    <input name="file" type="file" class="custom-file-input" id="validatedCustomFile" required>
+										    <label class="custom-file-label" for="validatedCustomFile"></label>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                </div>
+                                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                    <button class="btn btn-success notika-btn-success">Create</button>
+                                </div>
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+            <!-- New Case area End-->
+        </div>
+    </div>
+    <!-- Case area End-->
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'analysis/base.html' %}
+{% block passwords_active %}active{% endblock %}
+{% block passwords__active %}active{% endblock %}
+
+{% block body %}
+
+
+    <!-- Data Table area Start-->
+    <div class="data-table-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="data-table-list">
+                        <div class="table-responsive">
+                            <table id="data-table-basic" class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Hash</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for i in hashs_list %}
+                                    <tr>
+	                                	{% for j in i %}
+	                                    <td>{{ j }}</td>
+	                                    {% endfor %}
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Data Table area End-->
+{% endblock %}

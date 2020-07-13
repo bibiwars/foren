@@ -1,0 +1,128 @@
+{% extends 'manager/base.html' %}
+{% block users_active %}active{% endblock %}
+
+{% block body %}
+    <!-- Data Table area Start-->
+    <div class="data-table-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="normal-table-list">
+                        <div clas="bsc-tbl-cds">
+		                    <table class="table table-hover table-condensed">
+		                        <thead>
+		                            <tr>
+		                            	<th>Username</th>
+		                                <th>Email Address</th>
+		                                <th>First Name</th>
+		                                <th>Last Name</th>
+		                                <th>Last Login</th>
+		                                <th></th>
+		                                <th></th>
+		                            </tr>
+		                        </thead>
+		                        <tbody>
+		                            {% for user in users %}
+				                        <tr>
+				                        	<td>{{ user.get_username }}</td>
+				                        	<td>{{ user.email }}</td>
+				                            <td>{{ user.first_name }}</td>
+				                            <td>{{ user.last_name }}</td>
+				                            <td>{{ user.last_login }}</td>
+				                            <td><a href="{% url 'manager:user_ch' user.get_username %}"><button class="btn btn-gray gray-icon-notika"><i class="notika-icon notika-menus"></i></button></a></td>
+				                        </tr>
+		                            {% endfor %}
+		                        </tbody>
+		                    </table>
+		                    <br><hr>
+		                    <form action="{% url 'manager:user_add' %}" method="post">
+		                    <div class="cmp-tb-hd cmp-int-hd">
+								<h2>New User</h2>
+							</div>
+							<div class="form-example-int form-horizental">
+								<div class="form-group">
+									<div class="row">
+										<div class="col-lg-2 col-md-3 col-sm-3 col-xs-8">
+											<label class="hrzn-fm">Username</label>
+										</div>
+										<div class="col-lg-8 col-md-7 col-sm-7 col-xs-8">
+											<div class="nk-int-st">
+												<input type="text" class="form-control input-sm" placeholder="Enter Username" name="username" required>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-example-int form-horizental">
+								<div class="form-group">
+									<div class="row">
+										<div class="col-lg-2 col-md-3 col-sm-3 col-xs-8">
+											<label class="hrzn-fm">Email Address</label>
+										</div>
+										<div class="col-lg-8 col-md-7 col-sm-7 col-xs-8">
+											<div class="nk-int-st">
+												<input type="text" class="form-control input-sm" placeholder="Enter Email" name="email">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-example-int form-horizental">
+								<div class="form-group">
+									<div class="row">
+										<div class="col-lg-2 col-md-3 col-sm-3 col-xs-8">
+											<label class="hrzn-fm">First name</label>
+										</div>
+										<div class="col-lg-8 col-md-7 col-sm-7 col-xs-8">
+											<div class="nk-int-st">
+												<input type="text" class="form-control input-sm" placeholder="Enter First name" name="first_name">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-example-int form-horizental">
+								<div class="form-group">
+									<div class="row">
+										<div class="col-lg-2 col-md-3 col-sm-3 col-xs-8">
+											<label class="hrzn-fm">Last name</label>
+										</div>
+										<div class="col-lg-8 col-md-7 col-sm-7 col-xs-8">
+											<div class="nk-int-st">
+												<input type="text" class="form-control input-sm" placeholder="Enter Last name" name="last_name">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-example-int form-horizental mg-t-15">
+								<div class="form-group">
+									<div class="row">
+										<div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+											<label class="hrzn-fm">Password</label>
+										</div>
+										<div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+											<div class="nk-int-st">
+												<input type="password" class="form-control input-sm" placeholder="Password" name="password" required>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-example-int mg-t-15">
+								<div class="row">
+									<div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+									</div>
+									<div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+										{% csrf_token %}<button class="btn btn-success notika-btn-success">Submit</button>
+									</div>
+								</div>
+							</div>
+		                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Data Table area End-->
+{% endblock %}

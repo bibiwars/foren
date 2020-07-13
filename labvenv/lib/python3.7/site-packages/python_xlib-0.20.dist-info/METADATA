@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: python-xlib
+Version: 0.20
+Summary: Python X Library
+Home-page: https://github.com/python-xlib/python-xlib
+Author: Peter Liljenberg
+Author-email: petli@ctrl-c.liu.se
+License: LGPLv2+
+Download-URL: https://github.com/python-xlib/python-xlib/releases
+Keywords: xlib x11 x windows
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Dist: six (>=1.10.0)
+
+UNKNOWN
+
+

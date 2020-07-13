@@ -1,0 +1,47 @@
+{% extends 'analysis/base.html' %}
+{% block cmd_active %}active{% endblock %}
+{% block cmd__active %}active{% endblock %}
+
+{% block body %}
+
+
+    <!-- Data Table area Start-->
+    <div class="data-table-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="data-table-list">
+                        <div class="table-responsive">
+                            <table id="data-table-basic" class="table table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Process</th>
+                                        <th>PID</th>
+                                        <th>History Offset</th>
+                                        <th>Application</th>
+                                        <th>Handle</th>
+                                        <th>Command Number</th>
+                                        <th>Command Offset</th>
+                                        <th>Command</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for i in cmd_list %}
+                                    <tr>
+                                    	{% with i as i %}
+		                                	{% for j in i %}
+		                                    <td>{{ j }}</td>
+		                                    {% endfor %}
+		                                {% endwith %}
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Data Table area End-->
+{% endblock %}

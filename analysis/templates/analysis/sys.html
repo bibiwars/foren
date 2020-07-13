@@ -1,0 +1,159 @@
+{% extends 'analysis/base.html' %}
+{% block sys_active %}active{% endblock %}
+{% block sys__active %}active{% endblock %}
+
+{% block body %}
+<div class="breadcomb-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="breadcomb-list">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="breadcomb-wp">
+									<div class="breadcomb-icon">
+										<i class="notika-icon notika-windows"></i>
+									</div>
+									<div class="breadcomb-ctn">
+										<h2>Case: {{ case.c_name }}</h2>
+										<h4>Type: {{ case.c_type }}</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="notika-status-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
+                        <div class="website-traffic-ctn">
+                            <p>Image Profile</p>
+                            <br>
+                            <h2><span class="">{{ profile }}</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
+                        <div class="website-traffic-ctn">
+                            <p>CPU Process Number</p>
+                            <br>
+                            <h2><span class="">{{ cpu }}</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
+                        <div class="website-traffic-ctn">
+                            <p>Image Time (GMT {{date|slice:'-5::'}})</p>
+                            <br>
+                            <h2><span class="">{{ date|slice:':-6:' }}</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="normal-table-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="normal-table-list">
+                        <div class="basic-tb-hd">
+                            <h2>Possible Malware Detected</h2>
+                        </div>
+                        <div class="bsc-tbl">
+                            <table class="table table-condensed table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Name of identified rule</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for m in malware %}
+                                    <tr class="danger">
+                                        <td>{{ m }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="normal-table-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="normal-table-list">
+                        <div class="basic-tb-hd">
+                            <h2>Possible Malicious IPs Detected</h2>
+                        </div>
+                        <div class="bsc-tbl">
+                            <table class="table table-condensed table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>IP address</th>
+                                        <th>Public address</th>
+                                        <th>Abuse of Confidence %</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for ip in ips %}
+                                    <tr class="danger">
+                                        {% for i in ip %}
+                                            <td>{{ i }}</td>
+                                        {% endfor %}
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="normal-table-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="normal-table-list">
+                        <div class="basic-tb-hd">
+                            <h2>Possible Keylogger software Detected</h2>
+                        </div>
+                        <div class="bsc-tbl">
+                            <table class="table table-condensed table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Keylogger process name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for k in keylog %}
+                                    <tr class="danger">
+                                        <td>{{ k }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base_net.html' %}
+{% block files_active %}active{% endblock %}
+{% block files__active %}active{% endblock %}
+
+{% block body %}
+
+
+    <!-- Data Table area Start-->
+    <div class="data-table-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="data-table-list">
+                        <div class="table-responsive">
+                            <table id="data-table-basic" class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>File</th>
+                                        <th>Output</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for file in files %}
+                                    <tr>
+		                                	{% for column in file %}
+		                                    <td>{{ column }}</td>
+		                                    {% endfor %}
+		                                <td><a href="/files/{{file.0}}" target="_blank"><button class="btn btn-success notika-btn-success waves-effect">Download</button></a></td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Data Table area End-->
+{% endblock %}

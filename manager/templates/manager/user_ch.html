@@ -1,0 +1,95 @@
+{% extends 'manager/base.html' %}
+{% block users_active %}active{% endblock %}
+
+{% block body %}
+    <!-- Data Table area Start-->
+    <div class="data-table-area">
+        <div class="container">
+            <div class="row">
+                {% if err %}
+		                    	<div class="alert alert-danger alert-mg-b-0" role="alert">{{ err }}
+</div>
+		                    {% endif %}
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="normal-table-list">
+                        <div class="basic-tb-hd">
+							<h2>General Information</h2>
+						</div>
+                        <div clas="bsc-tbl-cds">
+		                    <table class="table table-hover table-condensed">
+		                        <thead>
+		                            <tr>
+		                            	<th>Username</th>
+		                                <th>Email Address</th>
+		                                <th>First Name</th>
+		                                <th>Last Name</th>
+		                                <th>Admin</th>
+		                                <th></th>
+		                            </tr>
+		                        </thead>
+		                        <tbody>
+		                        	<form action="{% url 'manager:user_ch_gen' user.get_username %}" method="post">
+				                        <tr>
+				                        	<td>{{ user.get_username }}</td>
+				                        	<td><input type="text" name="email" class="form-control" value="{{ user.email }}"></td>
+				                            <td><input type="text" name="first_name" class="form-control" value="{{ user.first_name }}"></td>
+				                            <td><input type="text" name="last_name" class="form-control" value="{{ user.last_name }}"></td>
+				                            <td>
+				                            	{% if not user.is_superuser %}
+				                            		<select class="form-control" id="sel1" name="admin"><option value="0" selected>User</option><option value="1">Admin</option></select>
+						                        {% else %}
+						                    	    <select class="form-control" id="sel1" name="admin"><option value="0">User</option><option value="1" selected>Admin</option></select>
+				                            	{% endif %}
+				                            </td>
+				                            <td>{% csrf_token %}<button class="btn btn-success success-icon-notika">Submit</button></a></td>
+				                        </tr>
+		                        	</form>
+		                        </tbody>
+		                    </table>
+		                </div>
+                    </div>
+                    <br>
+                    <div class="normal-table-list">
+                        <div class="basic-tb-hd">
+							<h2>Change Password</h2>
+						</div>
+                        <div clas="bsc-tbl-cds">
+		                    <table class="table table-hover table-condensed">
+		                        <thead>
+		                            <tr>
+		                            	<th>Old password</th>
+		                                <th></th>
+		                                <th>New password</th>
+		                                <th>Confirm New password</th>
+		                                <th></th>
+		                            </tr>
+		                        </thead>
+		                        <tbody>
+		                        	<form action="{% url 'manager:user_ch_pwd' user.get_username %}" method="post">
+				                        <tr>
+				                        	<td><input type="password" name="old" class="form-control" value="" required></td>
+				                        	<td></td>
+				                        	<td><input type="password" name="new" class="form-control" value="" required></td>
+				                            <td><input type="password" name="new_re" class="form-control" value="" required></td>
+				                            <td>{% csrf_token %}<button class="btn btn-success success-icon-notika">Submit</button></a></td>
+				                        </tr>
+		                        	</form>
+		                        </tbody>
+		                    </table>
+		                </div>
+                    </div>
+                    <br>
+                    <div class="normal-table-list">
+                        <div class="basic-tb-hd">
+							<h2>Remove User</h2>
+						</div>
+                        <div clas="bsc-tbl-cds">
+		                    <a href="{% url 'manager:user_remove' user.get_username %}"><button class="btn btn-danger danger-icon-notika">Delete</button></a>
+		                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Data Table area End-->
+{% endblock %}
