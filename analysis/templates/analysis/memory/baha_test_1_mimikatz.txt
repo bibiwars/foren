@@ -1,0 +1,4 @@
+Module   User             Domain           Password                                
+-------- ---------------- ---------------- ----------------------------------------
+wdigest  Noxious          PCX              #1SHOT                                  
+wdigest  PCX$             WORKGROUP                                                

@@ -1,0 +1,176 @@
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x2705000
+Record length: 0x100
+Location: :2019032020190321: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(6).jpg
+Last modified: 2019-03-20 14:32:51 UTC+0000
+Last accessed: 2019-03-20 13:32:51 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x2705100
+Record length: 0x100
+Location: :2019032020190321: Noxious@:Host: Computer
+Last modified: 2019-03-20 14:32:51 UTC+0000
+Last accessed: 2019-03-20 13:32:51 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x2705200
+Record length: 0x100
+Location: :2019032020190321: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(10).jpg
+Last modified: 2019-03-20 15:17:07 UTC+0000
+Last accessed: 2019-03-20 14:17:07 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x2705300
+Record length: 0x100
+Location: :2019032020190321: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(0).jpg
+Last modified: 2019-03-20 15:17:10 UTC+0000
+Last accessed: 2019-03-20 14:17:10 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x2705400
+Record length: 0x100
+Location: :2019032020190321: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(1).jpg
+Last modified: 2019-03-20 14:33:00 UTC+0000
+Last accessed: 2019-03-20 13:33:00 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x2705500
+Record length: 0x100
+Location: :2019032020190321: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(11).jpg
+Last modified: 2019-03-20 15:17:16 UTC+0000
+Last accessed: 2019-03-20 14:17:16 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x2705600
+Record length: 0x100
+Location: :2019032020190321: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(8).jpg
+Last modified: 2019-03-20 15:26:36 UTC+0000
+Last accessed: 2019-03-20 14:26:36 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x2705700
+Record length: 0x100
+Location: :2019032020190321: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(7).jpg
+Last modified: 2019-03-20 15:17:13 UTC+0000
+Last accessed: 2019-03-20 14:17:13 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x2705800
+Record length: 0x100
+Location: :2019032020190321: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(9).jpg
+Last modified: 2019-03-20 15:17:15 UTC+0000
+Last accessed: 2019-03-20 14:17:15 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x2705900
+Record length: 0x100
+Location: :2019032020190321: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(3).jpg
+Last modified: 2019-03-20 15:17:19 UTC+0000
+Last accessed: 2019-03-20 14:17:19 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x2705a00
+Record length: 0x100
+Location: :2019032020190321: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(8).jpg
+Last modified: 2019-03-20 15:22:20 UTC+0000
+Last accessed: 2019-03-20 14:22:20 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x4515000
+Record length: 0x100
+Location: Visited: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(0).jpg
+Last modified: 2019-03-20 14:17:10 UTC+0000
+Last accessed: 2019-03-20 14:17:10 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa8
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x4515100
+Record length: 0x100
+Location: Visited: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(2).jpg
+Last modified: 2019-03-19 15:24:03 UTC+0000
+Last accessed: 2019-03-19 15:24:03 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa8
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x4515200
+Record length: 0x100
+Location: Visited: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(7).jpg
+Last modified: 2019-03-20 14:17:13 UTC+0000
+Last accessed: 2019-03-20 14:17:13 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa8
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x4515300
+Record length: 0x100
+Location: Visited: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(8).jpg
+Last modified: 2019-03-20 14:22:20 UTC+0000
+Last accessed: 2019-03-20 14:22:20 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa8
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x4515400
+Record length: 0x100
+Location: Visited: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(3).jpg
+Last modified: 2019-03-20 14:17:19 UTC+0000
+Last accessed: 2019-03-20 14:17:19 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa8
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x4515500
+Record length: 0x100
+Location: Visited: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(6).jpg
+Last modified: 2019-03-20 13:32:51 UTC+0000
+Last accessed: 2019-03-20 13:32:51 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa8
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x4515600
+Record length: 0x100
+Location: Visited: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(10).jpg
+Last modified: 2019-03-20 14:17:07 UTC+0000
+Last accessed: 2019-03-20 14:17:07 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xac
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x4515700
+Record length: 0x100
+Location: Visited: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(1).jpg
+Last modified: 2019-03-20 13:33:00 UTC+0000
+Last accessed: 2019-03-20 13:33:00 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa8
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x4515800
+Record length: 0x100
+Location: Visited: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(11).jpg
+Last modified: 2019-03-20 14:17:16 UTC+0000
+Last accessed: 2019-03-20 14:17:16 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xac
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x4515900
+Record length: 0x100
+Location: Visited: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(8).jpg
+Last modified: 2019-03-20 14:26:36 UTC+0000
+Last accessed: 2019-03-20 14:26:36 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa8
+**************************************************
+Process: 1896 explorer.exe
+Cache type "URL " at 0x4515a00
+Record length: 0x100
+Location: Visited: Noxious@file:///C:/Users/Noxious/Desktop/cat%20(9).jpg
+Last modified: 2019-03-20 14:17:15 UTC+0000
+Last accessed: 2019-03-20 14:17:15 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa8

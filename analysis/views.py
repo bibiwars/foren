@@ -29,8 +29,11 @@ def memory(request):
 	# return
 	detection = []
 	# detect1 : malware
-	list_malware = get_list_data(case, 'yarascan')
-	list_malware = list(dict.fromkeys([item[0] for item in list_malware['rows']]))
+	try:
+		list_malware = get_list_data(case, 'yarascan')
+		list_malware = list(dict.fromkeys([item[0] for item in list_malware['rows']]))
+	except:
+		list_malware = ['']
 	# end detect1
 	# detect2 : IPs ----- change it into the script
 	list_ips = get_list_data(case, 'netscan')
@@ -272,9 +275,12 @@ def yara(request):
 		return render(request, 'analysis/404.html')
 	#end test cases#
 	#get data
-	list_data = get_list_data(case, 'yarascan')
-	#return
-	return render(request, 'analysis/yara.html', {'case':case,'yara_list':list_data['rows']})
+	try:
+		list_data = get_list_data(case, 'yarascan')
+		#return
+		return render(request, 'analysis/yara.html', {'case':case,'yara_list':list_data['rows']})
+	except:
+		return render(request, 'analysis/yara.html', {'case':case})
 
 def hashs(request):
 	#TEST CASES :3#
