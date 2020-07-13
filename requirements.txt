@@ -21,7 +21,7 @@ cryptography==2.1.4
 cycler==0.10.0
 decorator==4.3.0
 django-sslserver==0.20
-django==2.1.7
+django==2.2.13
   - Django [required: >=1.8, installed: 2.1.7]
     - pytz [required: Any, installed: 2017.2]
   - setuptools [required: Any, installed: 40.6.2]
