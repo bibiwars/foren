@@ -33,7 +33,7 @@ pymongo==2.7.1
   - pymongo [required: >=3.2.0, installed: 3.7.2]
   - sqlparse [required: >=0.2.3, installed: 0.2.4]
 dnspython==1.15.0
-ecdsa==0.13
+ecdsa==0.13.3
 #Electrum==3.0.5
 entrypoints==0.3
 evdev==1.1.2
