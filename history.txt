@@ -1,0 +1,284 @@
+    1  nano /etc/ssh/sshd_config .
+    2  sudo nano /etc/ssh/sshd_config
+    3  sudo su
+    4  exit
+    5  sudo su
+    6  ls
+    7  git clone https://github.com/hani037/Audit_pfa
+    8  git clone https://github.com/velzimar/pfa_backend/
+    9  ls
+   10  cd pfa_backend/
+   11  git show
+   12  q
+   13  git log
+   14  qq
+   15  cd ..
+   16  tmux
+   17  ls
+   18  cd pfa_backend/
+   19  node
+   20  sudo apt install nodejs
+   21  node up.js
+   22  node app.js
+   23  node install express
+   24  sudo node install express
+   25  npm install express
+   26  sudo apt install npm
+   27  sudo su
+   28  cd Audit_pfa/
+   29  sudo su
+   30  ls
+   31  history
+   32  sudo su
+   33  exit
+   34  ls
+   35  cd lab_clean/
+   36  ls
+   37  cd analysis/
+   38  ls
+   39  cd templates/analysis/memory/
+   40  ls
+   41  cd ../../../..
+   42  ls
+   43  nano setup.sh
+   44  nano labvenv/
+   45  cd volatility/
+   46  ls
+   47  ls ../uploads/
+   48  cd /tmp
+   49  wget http://download1654.mediafire.com/2wxjdx88uzvg/60dkm1poq7uy2oo/cat_hunting.zip
+   50  unzip cat_hunting.zip
+   51  ls
+   52  ls -l
+   53  cd -
+   54  ls
+   55  python vol.py -f /tmp/cat_hunting imageinfo
+   56  sudo su
+   57  python vol.py -f /tmp/cat_hunting imageinfo
+   58  sudo su
+   59  python vol.py -f /tmp/cat_hunting imageinfo
+   60  python vol.py -f /tmp/cat_hunting yarascan
+   61  sudo apt-get install yara
+   62  python vol.py -f /tmp/cat_hunting yarascan
+   63  ls
+   64  nano setup.py
+   65  sudo apt-get remove yara
+   66  sudo su
+   67  python vol.py -f /tmp/cat_hunting yarascan
+   68  sudo su
+   69  python vol.py -f /tmp/cat_hunting yarascan
+   70  sudo su
+   71  python vol.py -f /tmp/cat_hunting yarascan
+   72  python vol.py -f /tmp/cat_hunting imageinfo
+   73  nano ../setup.sh
+   74  python vol.py -f /tmp/cat_hunting --profile Win7SP1x64 yarascan
+   75  python vol.py -f /tmp/cat_hunting --profile=Win7SP1x64 yarascan
+   76  python vol.py -f /tmp/cat_hunting yarascan
+   77  nano yara_rules_get.py
+   78  ls
+   79  python vol.py -f /tmp/cat_hunting --profile=Win7SP1x64 yarascan -y "./malware_rules.yar"
+   80  python vol.py -f /tmp/cat_hunting yarascan -y "./malware_rules.yar"
+   81  cd /tmp
+   82  ls
+   83  rm cat_hunting.zip
+   84  wget http://download948.mediafire.com/tp529tt8ffig/2t7bb2mflg2lwwj/music.rar
+   85  unrar
+   86  apt install unrar
+   87  sudo apt install unrar
+   88  unrar music.rar
+   89  unrar e music.rar
+   90  ls -l
+   91  unzip music.rar
+   92  rm music.rar
+   93  wget http://download1083.mediafire.com/t8anso8papgg/p86j6kcinbn3p23/raretowin.zip
+   94  unzip raretowin.zip
+   95  rm raretowin.zip
+   96  ls
+   97  cd -
+   98  python vol.py -f /tmp/raretowin.raw imageinfo
+   99  python vol.py -f /tmp/cat_hunting --profile=Win7SP1x64 yarascan -y "./malware_rules.yar"
+  100  python vol.py -f /tmp/cat_hunting --profile=Win7SP0x64 yarascan -y "./malware_rules.yar"
+  101  python vol.py -f /tmp/cat_hunting  yarascan -y "./malware_rules.yar"
+  102  python vol.py -f /tmp/cat_hunting --profile=Win7SP0x64 pslist
+  103  python vol.py -f /tmp/cat_hunting --profile=Win7SP1x64 pslist
+  104  cd ..
+  105  git init
+  106  git add .
+  107  git commit "first"
+  108  git commit -m "first"
+  109  git push
+  110  git push https://github.com/bibiwars/foren
+  111  git push --set-upstream https://github.com/bibiwars/foren master
+  112  git push forensics
+  113  git push --set-upstream forensics master
+  114  git remote add foren https://github.com/bibiwars/foren
+  115  git push
+  116  git push foren
+  117  git remote add foren https://github.com/bibiwars/foren --force
+  118  git push foren --force
+  119  git push --set-upstream forensics master --force
+  120  git push --set-upstream https://github.com/bibiwars/foren master --force
+  121  ls
+  122  cd lab_clean/
+  123  ls
+  124  cd analysis/
+  125  ls
+  126  nano p_parser.py
+  127  nano views.py
+  128  cat templates/analysis/memory/baha_test_1_yarascan.json
+  129  nano views.py
+  130  cat templates/analysis/memory/baha_test_1_iehistory.txt
+  131  cat templates/analysis/memory/baha_test_1_malfind.json
+  132  nano views.py
+  133  cd ..
+  134  cd uploads/
+  135  ls
+  136  mv baha_test_1 /tmp/
+  137  cd ..
+  138  git push
+  139  git commit -m "update"
+  140  git add .
+  141  git commit -m "update"
+  142  git push
+  143  mv /tmp/baha_test_1 ./uploads/
+  144  sudo mv /tmp/baha_test_1 ./uploads/
+  145  cd uploads/
+  146  ls
+  147  ls -l
+  148  ls -l ../
+  149  sudo chown ubuntu:ubuntu baha_test_1
+  150  ls -l
+  151  chmod 777 baha_test_1
+  152  ls
+  153  ls -l
+  154  ls
+  155  cat IPToBeReplaced.txt
+  156  ls
+  157  pwd
+  158  mkdir ../ous
+  159  sudo mkdir ../ous
+  160  sudo mv pfa_backend ../ous/
+  161  sudo mv Audit_pfa/ ../ous/
+  162  sudo mv IPToBeReplaced.txt ../ous/
+  163  ls
+  164  unzip lab_clean.zip
+  165  ls
+  166  cd lab_clean/
+  167  ls
+  168  sudo su
+  169  cd lab_clean/
+  170  ls
+  171  python3 manage.py runserver 0.0.0.0:80
+  172  sudo python3 manage.py runserver 0.0.0.0:80
+  173  ls up
+  174  ls upload
+  175  ls upload/
+  176  ls
+  177  ls uploads/
+  178  sudo python3 manage.py runserver 0.0.0.0:80
+  179  df
+  180  du
+  181  df
+  182  exit
+  183  kkkk
+  184  exit
+  185  tmux
+  186  du
+  187  df
+  188  top
+  189  exit
+  190  exit
+  191  sudo su
+  192  history
+  193  exit
+  194  cd lab_clean/
+  195  fish
+  196  sudo apt install fish
+  197  ping www.ggogle.com
+  198  ifconfig
+  199  ls uploads/ads
+  200  ls uploads/
+  201  ls uploads/ -l
+  202  ls
+  203  service stop apache2
+  204  sudo service apache2 stop
+  205  sudo su
+  206  cd /tmp
+  207  cd
+  208  cd ..
+  209  cd ous/
+  210  ls -l
+  211  ls -lhh
+  212  ls -lh
+  213  du
+  214  rm -rf *
+  215  sudo rm -rf *
+  216  ls
+  217  cd
+  218  ls
+  219  exit
+  220  ls
+  221  tmux
+  222  cd lab_clean/
+  223  sudo su
+  224  sudo su
+  225  ls
+  226  volatility
+  227  cd lab_clean/
+  228  ls
+  229  cd volatility/
+  230  ls
+  231  fish
+  232  cd lab_clean/uploads/
+  233  ps aux
+  234  wget http://13.90.61.46:8000/memory-dump.mem
+  235  wget http://13.90.61.46:80/memory-dump.mem
+  236  nmap 13.90.61.46
+  237  wget http://13.90.61.46:443/memory-dump.mem
+  238  ls
+  239  cd lab_clean/
+  240  ls
+  241  cd uploads/
+  242  ls
+  243  mv ../../memory-dump.mem .
+  244  mv memory-dump.mem baha_chiheb
+  245  cd ..
+  246  ls
+  247  nano list/views.py
+  248  fish
+  249  exit
+  250  ls
+  251  exit
+  252  ls
+  253  unzip lsass.zip
+  254  volatility
+  255  ./lab_clean/volatility/vol.py imageinfo -f lsass.DMP
+  256  sudo ./lab_clean/volatility/vol.py imageinfo -f lsass.DMP
+  257  sudo python ./lab_clean/volatility/vol.py imageinfo -f lsass.DMP
+  258  cd lab_clean/
+  259  ls
+  260  nano autofor/settings.py
+  261  cd uploads/
+  262  ls
+  263  rm baha_chiheb
+  264  wget https://github.com/mgoffin/malwarecookbook/raw/master/17/1/zeus.vmem.zip
+  265  unzip zeus.vmem.zip
+  266  mv zeus.vmem baha_ctf
+  267  cd ..
+  268  ls
+  269  nano list/views.py
+  270  fish
+  271  cd lab_clean/
+  272  ls
+  273  cat analysis/templates/analysis/memory/baha_ctf_init.json
+  274  ls
+  275  volatility/vol.py
+  276  sudo python volatility/vol.py uploads/baha_ctf --profile=WinXPSP2x86 netscan
+  277  sudo python volatility/vol.py -f uploads/baha_ctf --profile=WinXPSP2x86 netscan
+  278  sudo python volatility/vol.py -f uploads/baha_ctf --profile=WinXPSP2x86 connections
+  279  sudo python volatility/vol.py -f uploads/baha_ctf --profile=WinXPSP2x86 connscan
+  280  sudo python volatility/vol.py -f uploads/baha_ctf --profile=WinXPSP2x86 envvars
+  281  sudo python volatility/vol.py -f uploads/baha_ctf --profile=WinXPSP2x86 hivelist
+  282  sudo python volatility/vol.py -f uploads/baha_ctf --profile=WinXPSP2x86 printkey -K "Mi
+  283  crosoft\Windows NT\CurrentVersion\Winlogon"
+  284  sudo python volatility/vol.py -f uploads/baha_ctf --profile=WinXPSP2x86 printkey -K "Microsoft\Windows NT\CurrentVersion\Winlogon"
