@@ -76,7 +76,7 @@ olefile==0.44
 #onboard==1.4.1
 paramiko==2.0.0
 pbkdf2==1.3
-Pillow==5.4.1
+Pillow==7.1.0
 pluginbase==0.5
 promise==1.0.1
   - typing [required: Any, installed: ?]
