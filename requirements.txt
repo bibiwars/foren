@@ -56,7 +56,7 @@ iso8601==0.1.11
 itsdangerous==0.24
 jet==1.0
   - requests [required: Any, installed: 2.18.4]
-Jinja2==2.10
+Jinja2==2.11.3
   - MarkupSafe [required: >=0.23, installed: 1.1.0]
 jsonrpclib-pelix==0.3.1
 keyring==17.1.1
