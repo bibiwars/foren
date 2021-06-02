@@ -124,7 +124,7 @@ stem==1.6.0
 tabulate==0.7.7
 termcolor==1.1.0
 tzlocal==1.4
-urllib3==1.22
+urllib3==1.26.5
 virtualenv
 #wafw00f==0.9.4
 webencodings==0.5
