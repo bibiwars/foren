@@ -64,7 +64,7 @@ keyring==17.1.1
 keyrings.alt==3.1.1
 kiwisolver==1.0.1
 #LibAppArmor==2.13.2
-lxml==4.3.0
+lxml==4.6.5
 Mako==1.0.7
 #mate-tweak==18.4.0
 matplotlib==3.0.2
