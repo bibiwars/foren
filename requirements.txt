@@ -80,7 +80,7 @@ Pillow==5.4.1
 pluginbase==0.5
 promise==1.0.1
   - typing [required: Any, installed: ?]
-protobuf==3.6.1
+protobuf==3.18.3
 psutil==5.5.0
 psycopg2==2.7.7
 pyaes==1.6.1
