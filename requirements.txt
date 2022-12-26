@@ -130,5 +130,5 @@ virtualenv
 webencodings==0.5
 websocket-client==0.37.0
 Werkzeug==0.14.1
-wheel==0.30.0
+wheel==0.38.1
 XlsxWriter==0.9.6
